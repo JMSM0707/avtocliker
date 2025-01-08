@@ -4,7 +4,7 @@ import time
 import threading
 
 class AutoClicker:
-    def init(self, master):
+    def __init__(self, master):
         self.master = master
         self.master.title("Автокликер")
         
@@ -63,7 +63,7 @@ class AutoClicker:
 
         self.is_running = False
 
-if name == "main":
+if __name__ == "__main__":
     root = tk.Tk()
     app = AutoClicker(root)
     root.mainloop()
